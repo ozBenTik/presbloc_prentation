@@ -1,0 +1,12 @@
+name: common_ui
+description: A starting point for Dart libraries or applications.
+version: 1.0.0
+publish_to: none
+
+environment:
+  sdk: ^3.0.6
+  flutter: ">=3.3.0"
+
+dependencies:
+  shimmer: ^3.0.0
+  cached_network_image: ^3.2.3
