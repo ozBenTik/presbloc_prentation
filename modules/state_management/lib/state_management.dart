@@ -13,3 +13,4 @@ export 'src/image_bloc/image_bloc_events.dart';
 
 /// Theme Cubit
 export 'src/theme_cubit/theme_cubit.dart';
+export 'src/images_player_cubit/images_player_cubit.dart';

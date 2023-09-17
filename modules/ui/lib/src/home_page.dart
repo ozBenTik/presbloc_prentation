@@ -11,7 +11,10 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(providers: [
       BlocProvider<CounterBloc>(create: (BuildContext context) => CounterBloc(initialState: 0)),
-      BlocProvider<ThemeCubit>(create: (BuildContext context) => ThemeCubit(initialState: ThemeData())),
+      BlocProvider<ThemeCubit>(
+          create: (BuildContext context) => ThemeCubit(initialState: ThemeData())),
+      BlocProvider<ImagesPlayerCubit>(
+          create: (BuildContext context) => ImagesPlayerCubit(initialState: true)),
       BlocProvider<ImageBloc>(
           create: (BuildContext context) => ImageBloc(
               initialState:
