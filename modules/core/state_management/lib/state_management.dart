@@ -1,6 +1,5 @@
 library state;
 
-/// General state observer
 export 'src/state_observer.dart';
 
 /// Counter bloc

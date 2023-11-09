@@ -72,7 +72,8 @@ class _ImageContainerState extends State<ImageContainer> {
                 imageBuilder: (context, imageProvider) => Container(
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    image: DecorationImage(image: imageProvider, fit: BoxFit.cover),
+                    image: DecorationImage(
+                        image: imageProvider, fit: BoxFit.cover),
                   ),
                 ),
               ),
@@ -83,7 +84,9 @@ class _ImageContainerState extends State<ImageContainer> {
                   style: TextStyle(
                       fontSize: 32,
                       fontWeight: FontWeight.w500,
-                      color: url == OctopusImageEvent().url ? Colors.white : Colors.black),
+                      color: url == OctopusImageEvent().url
+                          ? context.read<ThemeCubit>().state.colorScheme.primary
+                          : context.read<ThemeCubit>().state.colorScheme.error),
                 ),
               ),
             ],

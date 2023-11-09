@@ -11,7 +11,7 @@ dependencies:
     sdk: flutter
 
   common_dependencies:
-    path: ../../modules/common_dependencies
+    path: ../../common_dependencies
 
 dev_dependencies:
   lints: ^2.0.0

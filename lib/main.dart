@@ -1,7 +1,7 @@
 import 'package:common_dependencies/common_dependencies.dart';
 import 'package:flutter/material.dart';
+import 'package:home/home.dart';
 import 'package:state_management/state_management.dart';
-import 'package:ui/ui.dart';
 
 void main() {
   Bloc.observer = const StateObserver();

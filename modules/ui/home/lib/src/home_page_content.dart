@@ -26,7 +26,9 @@ class HomePageContent extends StatelessWidget {
                       width: 50,
                       height: 50,
                       child: Icon(
-                        snap.data == null || snap.data! ? Icons.pause_circle : Icons.play_circle,
+                        snap.data == null || snap.data!
+                            ? Icons.pause_circle
+                            : Icons.play_circle,
                         size: 50,
                       ));
                 },
@@ -48,7 +50,8 @@ class HomePageContent extends StatelessWidget {
                   color: theme.scaffoldBackgroundColor,
                   child: Text(
                     'Click on the buttons and see what happens',
-                    style: theme.textTheme.headlineLarge?.copyWith(fontSize: 24),
+                    style:
+                        theme.textTheme.headlineLarge?.copyWith(fontSize: 24),
                     textAlign: TextAlign.center,
                   ),
                 );
@@ -61,9 +64,14 @@ class HomePageContent extends StatelessWidget {
               builder: (context, count) {
                 print('CounterBloc child built');
                 context.read<ThemeCubit>().toggleTheme(count % 2 == 0);
-                return Text(
-                  '$count',
-                  style: Theme.of(context).textTheme.displayLarge,
+                return Container(
+                  margin: const EdgeInsets.only(bottom: 20),
+                  width: 50,
+                  height: 50,
+                  child: Text(
+                    '$count',
+                    style: Theme.of(context).textTheme.displayLarge,
+                  ),
                 );
               },
             ),

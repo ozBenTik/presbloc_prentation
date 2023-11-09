@@ -1,8 +1,9 @@
 import 'package:common_dependencies/common_dependencies.dart';
+import 'package:flutter/material.dart';
 import 'package:state_management/state_management.dart';
 
 import 'home_page_content.dart';
-import 'package:flutter/material.dart';
+
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
